@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="assets/favicon.png" type="image/png"/>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css" type="text/css">
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+    <noscript>Las funcionalidades JavaScript deben estar habilitadas para acceder a este sitio web.</noscript>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="title" id="title">
+            <div class="topBarPhotoContainer">
+                <div id="topBarPhoto"></div>
+            </div>
+            <div class="topBarName">
+                <span id="topBarNameField"></span>
+            </div>
+        </div>
+        <div class="links">
+            <div class="link" id="aboutMeButton">
+                <span>Sobre mí</span>
+            </div>
+            <div class="link" id="technologiesButton">
+                <span>Tecnologías</span>
+            </div>
+            <div class="link" id="experienceButton">
+                <span>Experiencia</span>
+            </div>
+            <div class="link" id="trainingButton">
+                <span>Formación</span>
+            </div>
+            <div class="link" id="projectsButton">
+                <span>Proyectos</span>
+            </div>
+            <div class="link" id="contactButton">
+                <span>Contacto</span>
+            </div>
+            <div class="link" id="githubButton">
+                <span>GitHub</span>
+            </div>
+            <div id="hambButton" id="hambButton">
+                <i class="fa fa-bars" id="hambButtonIcon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="hambMenu" id="hambMenu">
+        <div class="menuBarSpace"></div>
+        <div class="hambMenuItem" id="aboutMeMenuButton">
+            <span>Sobre mí</span>
+        </div>
+        <div class="hambMenuItem" id="technologiesMenuButton">
+            <span>Tecnologías</span>
+        </div>
+        <div class="hambMenuItem" id="experienceMenuButton">
+            <span>Experiencia</span>
+        </div>
+        <div class="hambMenuItem" id="trainingMenuButton">
+            <span>Formación</span>
+        </div>
+        <div class="hambMenuItem" id="projectsMenuButton">
+            <span>Proyectos</span>
+        </div>
+        <div class="hambMenuItem" id="contactMenuButton">
+            <span>Contacto</span>
+        </div>
+        <div class="attribution">
+            <span>Created by Juan Gilsanz</span>
+            <img src="assets/github.png" alt="Enlace al repositorio" id="projectRepository">
+        </div>
+    </div>
+    <div class="body">
+        <div class="first" id="first">
+            <div class="profile">
+                <div class="mainPhotoContainer" id="mainPhotoContainer">
+                    <img src="" id="mainPhoto">
+                </div>
+                <div class="nameDiv">
+                    <span id="mainName"></span>
+                    <span id="mainDescription"></span>
+                </div>
+            </div>
+            <div class="arrowBox">
+                <div class="container" id="down1">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="arrowBoxTop">
+                <div class="container" id="up2">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="title2">Sobre mí</h1>
+            </div>
+            <div class="aboutBox">
+                <div class="text">
+                    <div id="aboutText"></div>
+                </div>
+                <div class="img">
+                    <img id="aboutPicture">
+                </div>
+            </div>
+            <div class="arrowBoxBottom">
+                <div class="container" id="down2">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="technologies" id="technologies">
+            <div class="arrowBoxTop">
+                <div class="container" id="up3">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="title3">Tecnologías</h1>
+            </div>
+            <div class="technologiesBox" id="technologiesBox">
+
+            </div>
+            <div class="arrowBoxBottom">
+                <div class="container" id="down3">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="experience" id="experience">
+            <div class="arrowBoxTop">
+                <div class="container" id="up4">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="title4">Experiencia</h1>
+            </div>
+            <div class="experienceBox" id="experienceBox">
+
+            </div>
+            <div class="arrowBoxBottom">
+                <div class="container" id="down4">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="training" id="training">
+            <div class="arrowBoxTop">
+                <div class="container" id="up5">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="title5">Formación</h1>
+            </div>
+            <div class="trainingBox" id="trainingBox">
+
+            </div>
+            <div class="arrowBoxBottom">
+                <div class="container" id="down5">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="arrowBoxTop">
+                <div class="container" id="up6">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="title6">Proyectos</h1>
+            </div>
+            <div class="projectsBox" id="projectsBox">
+
+            </div>
+            <div class="arrowBoxBottom">
+                <div class="container" id="down6">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="arrowBoxTop">
+                <div class="container" id="up7">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1 id="title7">Contacto y descargas</h1>
+            </div>
+            <div class="contactBox" id="contactBox">
+                <div class="contact">
+                    <div class="userData">
+                        <div>
+                            <img src="assets/email-icon.png">
+                            <a href="" id="email"></a>
+                        </div>
+                        <div>
+                            <img src="assets/phone.png">
+                            <a href="" id="phone"></a>
+                        </div>
+                    </div>
+                    <div class="linkedin">
+                        <!--Linkedin widget-->
+                    </div>
+                </div>
+                <div class="downloads">
+                    <a class="btn btn-white btn-animate" id="downloadCV" target="_blank">Descargar currículum</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
